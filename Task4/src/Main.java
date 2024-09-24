@@ -8,6 +8,8 @@ public class Main {
             phone = phone.replaceAll("[^\\d]", "");
             if (phone.matches("^[78][0-9]{10}$")) {
                 System.out.println(phone);
+            } else if(phone.length() == 10){
+                System.out.println(7 + phone);
             } else {
                 System.out.println("Неверный формат номера");
             }
